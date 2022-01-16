@@ -1,0 +1,70 @@
+.schero-home {
+    &.loading-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        @include size(100%, 100vh);
+        background: linear-gradient(180deg, #A8CFFD 0%, #F2F8FF 76.04%);        
+        .container {    
+            .logo-wrap {
+                //@include transform(scale(.5 .5));
+                margin-top: 0;
+                margin-bottom: -80px;                
+            }
+            .btn-explore {
+                display: block;                
+                grid-row: 2/3;
+                opacity: 1;
+                pointer-events: auto;
+                max-height: none;
+            }
+            .text-loading {
+                display: inline-block;                
+                grid-row: 3/4;
+                opacity: 1;
+                pointer-events: auto;
+                max-height: none;
+            }
+            .--h1 {
+                visibility: hidden; 
+                max-height: 0px;                
+            }
+            .text-hero {
+                opacity: 0;   
+                max-height: 0px;             
+            }
+            .btn-pitch {
+                opacity: 0;   
+                max-height: 0px;             
+            }
+            .contract-wrap {
+                opacity: 0;
+                max-height: 0px;
+            }
+        }
+        .bg-wrap {
+            opacity: 0;
+            pointer-events: none;                        
+        }
+        .chars-wrap {
+            opacity: 0;
+            pointer-events: none;            
+        }
+    }
+}
+#main-wrap {
+    &.loading-wrap {
+        .header {
+            opacity: 0;
+            pointer-events: none;
+        }
+    }
+}
+
+.mini-header {
+    &.loading-wrap {
+        opacity: 0;
+        pointer-events: none;
+    }       
+}

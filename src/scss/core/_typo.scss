@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "il";
+    src: url("../fonts/Inter-Light.woff2") format("woff2"), url("../fonts/Inter-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: fallback;
+}
+@font-face {
+    font-family: "i";
+    src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback;
+}
+@font-face {
+    font-family: "isb";
+    src: url("../fonts/Inter-Semibold.woff2") format("woff2"), url("../fonts/Inter-Semibold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: fallback;
+}
+@font-face {
+    font-family: "ib";
+    src: url("../fonts/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: fallback;
+}
+@font-face {
+    font-family: "e";
+    src: url("../fonts/Evil-Empire.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+/*font families*/
+$font-main: il;
+
+/*headings typo*/
+$fs-h1: 9rem;
+$lh-h1: 8.1rem;
+$fs-h2: 8rem;
+$lh-h2: 7.2rem;
+$fs-h3: 4.6rem;
+$lh-h3: 6rem;
+$fs-h4: 3.2rem;
+$lh-h4: 4.3rem;
+$fs-h5: 2rem;
+$lh-h5: 1.8rem;
+
+$fs-12: 1.2rem;
+$lh-12: 1.8rem;
+
+$fs-14: 1.4rem;
+$lh-14: 2rem;
+
+$fs-16: 1.6rem;
+$lh-16: 2.4rem;
+
+
+////////////////////// HEADING ///////////////////////
+
+.heading {
+    font-family: e;
+    &.--h1 {
+        font-size: $fs-h1;
+        line-height: $lh-h1;
+    }
+    &.--h2 {
+        font-size: $fs-h2;
+        line-height: $lh-h2;
+    }
+    &.--h3 {
+        font-size: $fs-h3;
+        line-height: $lh-h3;
+    }
+    &.--h4 {
+        font-size: $fs-h4;
+        line-height: $lh-h4;
+    }
+    &.--h5 {
+        font-size: $fs-h5;
+        line-height: $lh-h5;
+    }
+}
+
+////////////////////// BODY TEXT ///////////////////////
+.text-12 {
+    font-size: $fs-12;
+    line-height: $lh-12;
+    &.bold {
+        font-family: "ib";
+    }
+}
+.text-14 {
+    font-size: $fs-14;
+    line-height: $lh-14;
+    &.bold {
+        font-family: "ib";
+    }
+}
+.text-16 {
+    font-size: $fs-16;
+    line-height: $lh-16;
+    &.bold {
+        font-family: "ib";
+    }
+}
+
+////////////////////// LABEL ///////////////////////
+a {
+    font-size: $fs-16;
+    text-decoration: none;
+}

@@ -1,0 +1,73 @@
+$xxs-min: 576px;
+$xs-min: 768px;
+$sm-min: 992px;
+$md-min: 1280px;
+$lg-min: 1450px;
+
+$xxs-max: ($xxs-min - 1);
+$xs-max: ($xs-min - 1);
+$sm-max: ($sm-min - 1);
+$md-max: ($md-min - 1);
+$lg-max: ($lg-min - 1);
+
+@-ms-viewport {
+    width: device-width;
+}
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    //font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    user-select: none;
+    -webkit-user-select: none;
+}
+html {
+    font-size: 62.5%;
+}
+main {
+    overflow: hidden;
+}
+body {
+    width: 100%;
+    margin: auto;
+    font-family: il;
+    @include text($fs-16, $lh-16, $dark);
+    background-color: $white;
+    .scrollmain {
+        will-change: transform;
+    }
+    .container {
+        width: 100%;
+        max-width: 1504px;
+        padding-right: 32px;
+        padding-left: 32px;
+        margin-right: auto;
+        margin-left: auto;
+        &.--grid {
+            display: grid;
+            grid-template-columns: repeat(16, 1fr);
+            grid-auto-rows: auto;
+            column-gap: 32px;
+        }
+    }
+
+    @include lg {
+        // CSS responsive large desktop
+    }
+    @include md {
+        // CSS responsive desktop
+    }
+    @include sm {
+        // CSS responsive tablet
+    }
+    @include xs {
+        // CSS responsive mobile
+    }
+    @include xxs {
+        // CSS responsive small mobile
+    }
+}
